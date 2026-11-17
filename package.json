@@ -10,8 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "dayjs": "^1.11.23",
+    "element-plus": "^2.14.8",
     "nuxt": "^4.6.4",
     "vue": "^3.5.45",
     "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.1.5"
   }
 }
