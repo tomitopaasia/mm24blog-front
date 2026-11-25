@@ -1,3 +1,20 @@
+# mm24blog-front – haru `nuxtui_test`
+
+Komponendiraamistik: **Nuxt UI v4** (https://ui.nuxt.com), põhineb Tailwind CSS-il ja Reka UI-l
+
+Paigaldus (dokumentatsiooni Nuxt juhend, Vuetify näite eeskujul config + plugin):
+
+```bash
+bun add @nuxt/ui tailwindcss
+```
+
+- `nuxt.config.ts` – `modules: ['@nuxt/ui']`, `css: ['~/assets/css/main.css']`
+- `app/assets/css/main.css` – `@import "tailwindcss"; @import "@nuxt/ui";`
+- `app/plugins/nuxt-ui.ts` – blogi teemavärvid (`updateAppConfig` → primary emerald, neutral slate)
+- `app/app.vue` – `UApp` + menüü `UNavigationMenu` komponendiga, lingid kõigile lehtedele
+
+Käivitamine: `bun install && bun run dev`
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
