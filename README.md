@@ -1,3 +1,19 @@
+# mm24blog-front – haru `elementplus_test`
+
+Komponendiraamistik: **Element Plus** (https://element-plus.org)
+
+Paigaldus (Vuetify näite eeskujul, dokumentatsiooni "Full import" + SSR juhend):
+
+```bash
+bun add element-plus
+```
+
+- `nuxt.config.ts` – `build.transpile: ['element-plus']`
+- `app/plugins/element-plus.ts` – laeb CSS-i, registreerib Element Plusi (`vueApp.use(ElementPlus, { locale: et })`) ja annab SSR-i jaoks `ID_INJECTION_KEY` / `ZINDEX_INJECTION_KEY`
+- `app/app.vue` – menüü `ElMenu` + `ElMenuItem` komponentidega, lingid kõigile lehtedele
+
+Käivitamine: `bun install && bun run dev`
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

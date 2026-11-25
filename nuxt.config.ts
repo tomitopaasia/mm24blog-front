@@ -3,5 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   telemetry: false,
-  modules: ['@element-plus/nuxt'],
+  // Element Plus tuleb serveripoolse renderduse jaoks transpileerida
+  build: {
+    transpile: ['element-plus'],
+  },
 })
