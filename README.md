@@ -1,3 +1,19 @@
+# mm24blog-front – haru `primevue_test`
+
+Komponendiraamistik: **PrimeVue 4** (https://primevue.org), teema Aura
+
+Paigaldus (Vuetify näite eeskujul, dokumentatsiooni Vite/Vue juhend):
+
+```bash
+bun add primevue @primeuix/themes
+```
+
+- `nuxt.config.ts` – `build.transpile: ['primevue']`
+- `app/plugins/primevue.ts` – `vueApp.use(PrimeVue, { theme: { preset: Aura } })` ja `Menubar` komponendi registreerimine
+- `app/app.vue` – menüü `Menubar` komponendiga (item-slotis `NuxtLink`), lingid kõigile lehtedele
+
+Käivitamine: `bun install && bun run dev`
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
